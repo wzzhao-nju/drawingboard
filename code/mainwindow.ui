@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>画图板</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="sources.qrc">
+    <normaloff>:/images/src/Main.png</normaloff>:/images/src/Main.png</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="choose">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/choose.png</normaloff>:/images/src/choose.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="line">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/drawLine.png</normaloff>:/images/src/drawLine.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="curve">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/drawCurve.png</normaloff>:/images/src/drawCurve.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ellipse">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/drawEllipse.png</normaloff>:/images/src/drawEllipse.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="polygon">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/drawPoligon.png</normaloff>:/images/src/drawPoligon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="translate">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/Move.png</normaloff>:/images/src/Move.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rotate">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/Rotate.png</normaloff>:/images/src/Rotate.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/Zoom.png</normaloff>:/images/src/Zoom.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="remove">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/deleteZone.png</normaloff>:/images/src/deleteZone.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="palette">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/Color.png</normaloff>:/images/src/Color.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clip">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="sources.qrc">
+      <normaloff>:/images/src/clip.png</normaloff>:/images/src/clip.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_save"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_edit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_clear"/>
+   </widget>
+   <widget class="QMenu" name="menu_insert">
+    <property name="title">
+     <string>插入</string>
+    </property>
+    <addaction name="action_line"/>
+    <addaction name="action_ellipse"/>
+    <addaction name="action_polygon"/>
+    <addaction name="action_curve_Bezier"/>
+    <addaction name="action_curve_Bspline"/>
+   </widget>
+   <widget class="QMenu" name="menu_choose">
+    <property name="title">
+     <string>选择</string>
+    </property>
+    <addaction name="action_choose"/>
+    <addaction name="separator"/>
+    <addaction name="action_translate"/>
+    <addaction name="action_rotate"/>
+    <addaction name="action_scale"/>
+    <addaction name="separator"/>
+    <addaction name="action_clip"/>
+   </widget>
+   <widget class="QMenu" name="menu_command">
+    <property name="title">
+     <string>命令行输入</string>
+    </property>
+    <addaction name="from_instruct"/>
+    <addaction name="from_file"/>
+   </widget>
+   <widget class="QMenu" name="menu_developertool">
+    <property name="title">
+     <string>开发者工具</string>
+    </property>
+    <addaction name="action_viewcode"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_edit"/>
+   <addaction name="menu_insert"/>
+   <addaction name="menu_choose"/>
+   <addaction name="menu_command"/>
+   <addaction name="menu_developertool"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_clear">
+   <property name="text">
+    <string>清空画布</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="text">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="action_curve_Bezier">
+   <property name="text">
+    <string>曲线（贝塞尔）</string>
+   </property>
+  </action>
+  <action name="action_ellipse">
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="action_polygon">
+   <property name="text">
+    <string>多边形</string>
+   </property>
+  </action>
+  <action name="action_choose">
+   <property name="text">
+    <string>选择</string>
+   </property>
+  </action>
+  <action name="action_translate">
+   <property name="text">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="action_rotate">
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="action_scale">
+   <property name="text">
+    <string>缩放</string>
+   </property>
+  </action>
+  <action name="action_clip">
+   <property name="text">
+    <string>裁剪线段</string>
+   </property>
+  </action>
+  <action name="from_instruct">
+   <property name="text">
+    <string>从指令输入</string>
+   </property>
+  </action>
+  <action name="from_file">
+   <property name="text">
+    <string>从文件输入</string>
+   </property>
+  </action>
+  <action name="action_curve_Bspline">
+   <property name="text">
+    <string>曲线（B样条）</string>
+   </property>
+  </action>
+  <action name="action_viewcode">
+   <property name="text">
+    <string>查看源码</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="sources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
